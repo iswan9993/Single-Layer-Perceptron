@@ -1,5 +1,7 @@
 #### Single Layer Perceptron
 
+---
+
 <p align="justify" style="text-indent:1.27cm">Single Layer Perceptron (SLP) terinspirasi oleh neuron biologis dan kemampuannya untuk memproses informasi. SLP didasarkan pada konsep neuron buatan, yang bertindak sebagai blok bangunan dasar jaringan saraf dan memproses input untuk menghasilkan output.</p>
 
 <p align="center"><img src="/Image/SLP-1.png"></p>
@@ -34,4 +36,51 @@ h(x,w,b) = w<sub>1</sub>x<sub>1</sub> + w<sub>2</sub>x<sub>2</sub>...w<sub>n</su
 
 #### perhitungan Ms.Exel dengan Learning Rule Based
 
-<p style="text-indent:1.27cm" align="justify">Perceptron learning rule itu adalah aturan atau cara yang dipakai perceptron untuk belajar dari data. Intinya, perceptron awalnya menebak output, lalu kalau tebakannya salah, bobotnya (weight) diperbaiki sedikit demi sedikit sampai tebakannya benar.pada percobaan ini saya menggunakan w<sub>1</sub> = 0.2, w<sub>2</sub> = 0.2, w<sub>3</sub> = 0.2, Threshold = 75, dan μ = 0.005. pada <a href="Code/Perceptron%20Learning%20Rule%20Based-SLP.csv">perceptron learning rule.csv</a>, v = w<sub>1</sub>x<sub>1</sub> + w<sub>2</sub>x<sub>2</sub> + w<sub>3</sub>x<sub>3</sub>, Y' = 1, IF v >= threshold dan Y' = 0, IF v < threshold. Sedangkan errornya adalah selisih antara Y dan Y'</p>
+---
+
+<p style="text-indent:1.27cm" align="justify">Perceptron learning rule itu adalah aturan atau cara yang dipakai perceptron untuk belajar dari data. Intinya, perceptron awalnya menebak output, lalu kalau tebakannya salah, bobotnya (weight) diperbaiki sedikit demi sedikit sampai tebakannya benar.pada percobaan ini saya menggunakan w<sub>1</sub> = 0.2, w<sub>2</sub> = 0.2, w<sub>3</sub> = 0.2, Threshold = 75, dan μ = 0.005. pada <a href="Code/Perceptron%20Learning%20Rule%20Based-SLP.csv">perceptron learning rule.csv</a>, v = w<sub>1</sub>x<sub>1</sub> + w<sub>2</sub>x<sub>2</sub> + w<sub>3</sub>x<sub>3</sub>, Y' = 1, IF v >= threshold dan Y' = 0, IF v < threshold. Sedangkan errornya adalah selisih antara Y dan Y'. Persamaa untuk update bobonya adalah:
+
+```math
+\begin{aligned}
+w_n=w_{n-1}+ \mu Ex_n
+\end{aligned}
+```
+
+#### Perhitungan manual Ms.Exel Linear Classifier Single Layer Perceptron Menggunakan Gradient Descent
+
+---
+
+<p style="text-indent:1.27cm" align="justify">Gradient Descent merupakan metode optimasi yang digunakan untuk mencari nilai bobot dan bias yang lebih optimal dengan cara mengurangi nilai error secara bertahap. Pada setiap iterasi, bobot dan bias diperbarui berdasarkan arah perubahan error terhadap parameter tersebut. Proses ini dilakukan secara berulang sampai nilai error menjadi semakin kecil sehingga model dapat menghasilkan prediksi yang lebih sesuai dengan target. 
+</p>
+<p style="text-indent:1.27cm" align="justify">Berbeda dengan percobaan sebelumnya yang menggunakan metode Learning Rule Based, pada percobaan tersebut model tidak menggunakan bias sehingga garis klasifikasi linear hanya dapat berputar pada titik pusat koordinat (0,0). Kondisi ini dapat membuat model kurang fleksibel dalam mengklasifikasikan data yang penyebarannya tidak berada di sekitar titik tersebut. Pada percobaan kali ini, digunakan bias serta pembaruan bobot dan bias pada setiap iterasi untuk mengurangi error. Dengan adanya pembaruan tersebut, garis klasifikasi dapat menyesuaikan posisinya terhadap penyebaran data sehingga diharapkan dapat meningkatkan ketepatan klasifikasi.
+</p>
+<p align="center"><img src="/Image/SLP-3.png"></p>
+<p> 
+Persamaan yang digunakan pada percobaan ini adalah:
+
+```math
+\begin{aligned}
+ &\boxed{\Delta w =2[g(w^Tx+b)-y][1-g(w^Tx+b)]g(w^Tx+b)x_n}\\
+ &\boxed{\Delta b =2[g(w^Tx+b)-y][1-g(w^Tx+b)]g(w^Tx+b)}\\
+ &\boxed{E=\sum_t(y_t-T_t)^2}\\
+
+ &\boxed{w_n=w_{n-1}-\mu \Delta w}\\
+ &\boxed{b_n=b_{n-1}-\mu \Delta b}
+\end{aligned}
+```
+
+</p>
+
+#### Linear Classifier Single Layer Perceptron Menggunakan Gradient Descent
+
+---
+
+#### Referensi
+
+---
+
+<a href="https://www.youtube.com/watch?v=_xsAjJRTuv0">youtube.com/@Rumah Belajar Statistika</a>
+<a href="https://www.youtube.com/watch?v=qAoDfpkwHNs">youtube.com/@Afiakenkyu</a>
+<a href="https://www.geeksforgeeks.org/python single-layer-perceptron-in-tensorflow/">geeksforgeeks</a>
+
+</p>
