@@ -17,19 +17,19 @@ h(x,w,b) = w<sub>1</sub>x<sub>1</sub> + w<sub>2</sub>x<sub>2</sub>...w<sub>n</su
 </p>
 <p align="center">
 
-$$
+```math
 \begin{aligned}
-\Delta w &= \frac{\partial}{\partial w_n}(h(x,w,b)-y)^2 \\
-         &= 2(h(x,w,b)-y)\frac{\partial }{\partial w_n} h(x,w,b)\\
-         &= 2(g(w^Tx+b)-y)\frac{\partial }{\partial w_n} g(w^Tx+b), \,\text{dimana} \,\frac{\partial }{\partial w_n} g(w^Tx+b) \, \text{diturunkan menjadi:} \\
-         & \frac{\partial }{\partial w_n} g(w^Tx+b) = \frac{\partial g(w^Tx+b)}{\partial (w^Tx + b)} \frac{\partial (w^Tx + b)}{\partial w_n}\\
-         &=[1-g(w^Tx+b)]g(w^Tx+b) \frac{\partial(w_nx_n + w_{n+1} x_{n+1}+b)}{\partial w_n}\\
-         &=[1-g(w^Tx+b)]g(w^Tx+b)x_n\text{, sehingga persamaan lengkapnya menjadi}\\
-         &\boxed{\Delta w =2[g(w^Tx+b)-y][1-g(w^Tx+b)]g(w^Tx+b)x_n}\\
-         &\boxed{\Delta b =2[g(w^Tx+b)-y][1-g(w^Tx+b)]g(w^Tx+b)}\\
-         &\boxed{}
+\Delta w &= \frac{\partial}{\partial w*n}(h(x,w,b)-y)^2 \\
+&= 2(h(x,w,b)-y)\frac{\partial }{\partial w_n} h(x,w,b)\\
+&= 2(g(w^Tx+b)-y)\frac{\partial }{\partial w_n} g(w^Tx+b), \,\text{dimana} \,\frac{\partial }{\partial w_n} g(w^Tx+b) \, \text{diturunkan menjadi:} \\
+& \frac{\partial }{\partial w_n} g(w^Tx+b) = \frac{\partial g(w^Tx+b)}{\partial (w^Tx + b)} \frac{\partial (w^Tx + b)}{\partial w_n}\\
+&=[1-g(w^Tx+b)]g(w^Tx+b) \frac{\partial(w_nx_n + w*{n+1} x\_{n+1}+b)}{\partial w_n}\\
+&=[1-g(w^Tx+b)]g(w^Tx+b)x_n\text{, sehingga persamaan lengkapnya menjadi}\\
+&\boxed{\Delta w =2[g(w^Tx+b)-y][1-g(w^Tx+b)]g(w^Tx+b)x_n}\\
+&\boxed{\Delta b =2[g(w^Tx+b)-y][1-g(w^Tx+b)]g(w^Tx+b)}\\
+&\boxed{E=\sum_t(y_t-T_t)^2}
 \end{aligned}
-$$
+```
 
 </p>
 
@@ -40,10 +40,3 @@ $$
 #### 1. perhitungan Ms.Exel dengan Learning Rule Based
 
 <p style="text-indent:1.27cm" align="justify">Perceptron learning rule itu adalah aturan atau cara yang dipakai perceptron untuk belajar dari data. Intinya, perceptron awalnya menebak output, lalu kalau tebakannya salah, bobotnya (weight) diperbaiki sedikit demi sedikit sampai tebakannya benar.pada percobaan ini saya menggunakan w<sub>1</sub> = 0.2, w<sub>2</sub> = 0.2, w<sub>3</sub> = 0.2, Threshold = 75, dan μ = 0.005. pada <a href="Code/Perceptron%20Learning%20Rule%20Based-SLP.csv">perceptron_learning_rule.csv</a>, v = w<sub>1</sub>x<sub>1</sub> + w<sub>2</sub>x<sub>2</sub> + w<sub>3</sub>x<sub>3</sub>, Y' = 1, IF v >= threshold dan Y' = 0, IF v < threshold. Sedangkan errornya adalah selisih antara Y dan Y'</p>
-$$
-\boxed{x^2}
-$$
-<p></p>
-<p></p>
-<sub></sub>
-<sup></sup>
