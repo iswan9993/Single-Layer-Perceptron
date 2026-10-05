@@ -15,7 +15,7 @@
 <p align="justify">Untuk mendapatkan hasil dari Weighted Sum h(x,w,b) kita menggunakan persamaan
 h(x,w,b) = w<sub>1</sub>x<sub>1</sub> + w<sub>2</sub>x<sub>2</sub>...w<sub>n</sub>x<sub>n</sub> + b , dimana b sebagai bias. h(x,w,b) = w<sup>T</sup>x + b, dan fungsi aktivasi yang digunakan adalah sigmoid, dengan persamaan $g(z)=\frac{1}{1 + \exp(-z)}$ , sehingga h(x,w,b) = g(w<sup>T</sup>x + b), kita dapat melakukan update bobot dengan persamaan w<sub>baru</sub> = w<sub>lama</sub> - μ∆w, dan update biasnya b<sub>baru</sub>= b<sub>lama</sub> - μ∆b, μ sebagai learning rate, dan untuk mencari ∆w kita menggunakan persamaan:
 </p>
-<p align="center">
+<p >
 
 $$
 \begin{aligned}
