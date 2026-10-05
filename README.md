@@ -39,7 +39,7 @@ $$
 
 ##### 1. perhitungan Ms.Exel dengan Learning Rule Based
 
-<p style="text-indent:1.27cm" align="justify">Perceptron learning rule itu adalah aturan atau cara yang dipakai perceptron untuk belajar dari data. Intinya, perceptron awalnya menebak output, lalu kalau tebakannya salah, bobotnya (weight) diperbaiki sedikit demi sedikit sampai tebakannya benar.pada percobaan ini saya menggunakan w<sub>1</sub> = 0.2, w<sub>2</sub> = 0.2, w<sub>3</sub> = 0.2, Threshold = 75, dan μ = 0.005. pada <a href="Code/Perceptron%20Learning%20Rule%20Based-SLP.csv">perceptron_learning_rule.csv</a>, v = w<sub>1</sub>x<sub>1</sub> + w<sub>2</sub>x<sub>2</sub> + w<sub>3</sub>x<sub>3</sub>, Y' = 1 IF v >= threshold dan Y' = 0 IF v < threshold. Sedangkan errornya adalah selisih antara Y dan Y'</p>
+<p style="text-indent:1.27cm" align="justify">Perceptron learning rule itu adalah aturan atau cara yang dipakai perceptron untuk belajar dari data. Intinya, perceptron awalnya menebak output, lalu kalau tebakannya salah, bobotnya (weight) diperbaiki sedikit demi sedikit sampai tebakannya benar.pada percobaan ini saya menggunakan w<sub>1</sub> = 0.2, w<sub>2</sub> = 0.2, w<sub>3</sub> = 0.2, Threshold = 75, dan μ = 0.005. pada <a href="Code/Perceptron%20Learning%20Rule%20Based-SLP.csv">perceptron_learning_rule.csv</a>, v = w<sub>1</sub>x<sub>1</sub> + w<sub>2</sub>x<sub>2</sub> + w<sub>3</sub>x<sub>3</sub>, Y' = 1, IF v >= threshold dan Y' = 0, IF v < threshold. Sedangkan errornya adalah selisih antara Y dan Y'</p>
 <p></p>
 <p></p>
 <sub></sub>
