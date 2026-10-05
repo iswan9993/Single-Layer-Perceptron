@@ -30,8 +30,6 @@ h(x,w,b) = w<sub>1</sub>x<sub>1</sub> + w<sub>2</sub>x<sub>2</sub>...w<sub>n</su
 \end{aligned}
 ```
 
-#### Hasil
-
 <p style="text-indent:1.27cm" align="justify"> pada perhitungan ini saya menggunakan beberapa percobaan untuk dapat membuktikan keakuratan perhitungan manual algoritma SLP.</p>
 
 #### perhitungan Ms.Exel dengan Learning Rule Based
