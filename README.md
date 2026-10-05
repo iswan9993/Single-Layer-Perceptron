@@ -19,32 +19,10 @@ h(x,w,b) = w<sub>1</sub>x<sub>1</sub> + w<sub>2</sub>x<sub>2</sub>...w<sub>n</su
 ```math
 \begin{aligned}
 \Delta w &= \frac{\partial}{\partial w_n}(h(x,w,b)-y)^2 \\
-&= 2(h(x,w,b)-y)\frac{\partial}{\partial w_n} h(x,w,b) \\
-&= 2(g(w^Tx+b)-y)\frac{\partial}{\partial w_n} g(w^Tx+b), \,\text{dimana} \,\frac{\partial}{\partial w_n} g(w^Tx+b) \, \text{diturunkan menjadi:} \\
-\frac{\partial}{\partial w_n} g(w^Tx+b) &= \frac{\partial g(w^Tx+b)}{\partial (w^Tx+b)} \frac{\partial (w^Tx+b)}{\partial w_n} \\
-&= [1-g(w^Tx+b)]\,g(w^Tx+b) \frac{\partial (w_nx_n + w_{n+1}x_{n+1}+b)}{\partial w_n} \\
-&= [1-g(w^Tx+b)]\,g(w^Tx+b)\,x_n \, \text{, sehingga persamaan lengkapnya menjadi:}
-
-\end{aligned}
-```
-
-```math
-\begin{array}{|l|}
-\hline
-\Delta w = 2[g(w^Tx+b)-y][1-g(w^Tx+b)]\,g(w^Tx+b)\,x_n \\
-\Delta b = 2[g(w^Tx+b)-y][1-g(w^Tx+b)]\,g(w^Tx+b) \\
-E = \sum_t (y_t-T_t)^2 \\
-\hline
-\end{array}
-```
-
-```math
-\begin{aligned}
-\Delta w &= \frac{\partial}{\partial w_n}(h(x,w,b)-y)^2 \\
 &= 2(h(x,w,b)-y)\frac{\partial }{\partial w_n} h(x,w,b)\\
 &= 2(g(w^Tx+b)-y)\frac{\partial }{\partial w_n} g(w^Tx+b), \,\text{dimana} \,\frac{\partial }{\partial w_n} g(w^Tx+b) \, \text{diturunkan menjadi:} \\
 & \frac{\partial }{\partial w_n} g(w^Tx+b) = \frac{\partial g(w^Tx+b)}{\partial (w^Tx + b)} \frac{\partial (w^Tx + b)}{\partial w_n}\\
-&=[1-g(w^Tx+b)]g(w^Tx+b) \frac{\partial(w_nx_n + w_{n+1} x\_{n+1}+b)}{\partial w_n}\\
+&=[1-g(w^Tx+b)]g(w^Tx+b) \frac{\partial(w_nx_n + w_{n+1} x_{n+1}+b)}{\partial w_n}\\
 &=[1-g(w^Tx+b)]g(w^Tx+b)x_n\text{, sehingga persamaan lengkapnya menjadi}\\
 &\boxed{\Delta w =2[g(w^Tx+b)-y][1-g(w^Tx+b)]g(w^Tx+b)x_n}\\
 &\boxed{\Delta b =2[g(w^Tx+b)-y][1-g(w^Tx+b)]g(w^Tx+b)}\\
