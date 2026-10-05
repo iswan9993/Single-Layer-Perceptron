@@ -19,7 +19,7 @@ h(x,w,b) = w<sub>1</sub>x<sub>1</sub> + w<sub>2</sub>x<sub>2</sub>...w<sub>n</su
 
 ```math
 \begin{aligned}
-\Delta w &= \frac{\partial}{\partial w*n}(h(x,w,b)-y)^2 \\
+\Delta w &= \frac{\partial}{\partial w_n}(h(x,w,b)-y)^2 \\
 &= 2(h(x,w,b)-y)\frac{\partial }{\partial w_n} h(x,w,b)\\
 &= 2(g(w^Tx+b)-y)\frac{\partial }{\partial w_n} g(w^Tx+b), \,\text{dimana} \,\frac{\partial }{\partial w_n} g(w^Tx+b) \, \text{diturunkan menjadi:} \\
 & \frac{\partial }{\partial w_n} g(w^Tx+b) = \frac{\partial g(w^Tx+b)}{\partial (w^Tx + b)} \frac{\partial (w^Tx + b)}{\partial w_n}\\
