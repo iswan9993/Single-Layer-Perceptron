@@ -74,13 +74,20 @@ Persamaan yang digunakan pada percobaan ini adalah:
 #### Linear Classifier Single Layer Perceptron Menggunakan Gradient Descent
 
 ---
+<p align="justify">Pada percobaan ini, proses pelatihan dilakukan secara manual dengan menggunakan dataset Iris pada <a href="https://archive.ics.uci.edu/dataset/53/iris">UCI Machine Learning Repository</a>, yang terdiri dari 100 data untuk dua kelas, yaitu Iris-setosa dan Iris-versicolor. Dataset dibagi menjadi 5 section, dengan masing-masing section terdiri dari 20 data. Pembagian dilakukan dengan menggabungkan data dari bagian awal dan akhir dataset sehingga diperoleh sec1 sampai sec5.</p>
+<p align="justify">Selanjutnya, diterapkan metode 5-Fold, yaitu pada setiap fold digunakan 4 section sebagai data pelatihan dan 1 section sebagai data validasi. sec1 sampai sec4 digunakan sebagai data training, sedangkan sec5 digunakan sebagai data validation. Pola yang sama diterapkan secara bergantian pada fold berikutnya</p>
+<p align="justify">Pada proses pelatihan, setiap data diproses menggunakan bobot dan bias yang kemudian menghasilkan nilai aktivasi, prediksi, dan error. Selanjutnya, delta bobot dan bias dihitung untuk memperbarui bobot menggunakan learning rate 0,1. Proses ini dilakukan berulang selama 300 epoch.
+
+</p>
+<p align="justify">Setelah satu epoch selesai, rata-rata error dan akurasi training dihitung. Bobot terakhir dari proses training kemudian digunakan untuk melakukan validasi pada section yang tidak digunakan sebagai data training. Hasil pelatihan kemudian ditampilkan dalam bentuk grafik untuk melihat penurunan error pada setiap epoch.</p>
+<p align="center"><img src="/Image/SLP-4.png"></p>
 
 #### Referensi
 
 ---
 
-<a href="https://www.youtube.com/watch?v=_xsAjJRTuv0">youtube.com/@Rumah Belajar Statistika</a>
-<a href="https://www.youtube.com/watch?v=qAoDfpkwHNs">youtube.com/@Afiakenkyu</a>
+<a href="https://www.youtube.com/watch?v=_xsAjJRTuv0">youtube.com/@Rumah Belajar Statistika</a><br>
+<a href="https://www.youtube.com/watch?v=qAoDfpkwHNs">youtube.com/@Afiakenkyu</a><br>
 <a href="https://www.geeksforgeeks.org/python single-layer-perceptron-in-tensorflow/">geeksforgeeks</a>
 
 </p>
