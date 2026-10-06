@@ -34,7 +34,7 @@ h(x,w,b) = w<sub>1</sub>x<sub>1</sub> + w<sub>2</sub>x<sub>2</sub>...w<sub>n</su
 
 <p style="text-indent:1.27cm" align="justify"> pada perhitungan ini saya menggunakan beberapa percobaan untuk dapat membuktikan keakuratan perhitungan manual algoritma SLP.</p>
 
-#### perhitungan Ms.Exel dengan Learning Rule Based
+#### 1. perhitungan Ms.Exel dengan Learning Rule Based
 
 ---
 
@@ -46,7 +46,7 @@ w_n=w_{n-1}+ \mu Ex_n
 \end{aligned}
 ```
 
-#### Perhitungan manual Ms.Exel Linear Classifier Single Layer Perceptron Menggunakan Gradient Descent
+#### 2. Perhitungan manual Ms.Exel Linear Classifier Single Layer Perceptron Menggunakan Gradient Descent
 
 ---
 
@@ -71,7 +71,7 @@ Persamaan yang digunakan pada percobaan ini adalah:
 
 </p>
 
-#### Linear Classifier Single Layer Perceptron Menggunakan Gradient Descent
+#### 3. Linear Classifier Single Layer Perceptron Menggunakan Gradient Descent
 
 ---
 <p align="justify">Pada percobaan ini, proses pelatihan dilakukan secara manual dengan menggunakan dataset Iris pada <a href="https://archive.ics.uci.edu/dataset/53/iris">UCI Machine Learning Repository</a>, yang terdiri dari 100 data untuk dua kelas, yaitu Iris-setosa dan Iris-versicolor. Dataset dibagi menjadi 5 section, dengan masing-masing section terdiri dari 20 data. Pembagian dilakukan dengan menggabungkan data dari bagian awal dan akhir dataset sehingga diperoleh sec1 sampai sec5.</p>
